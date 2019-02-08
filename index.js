@@ -1,18 +1,1 @@
-const adjectives = require('./adjectives'),
-	animals = require('./animals');
-
-module.exports = {
-	generateCombination(numAdjectives, delimiter, capitalizeFirstLetter) {
-		let combination = '';
-		const animal = animals[Math.floor(Math.random() * animals.length)];
-
-		for (let i = 0; i < numAdjectives; i++) {
-			const adjective = adjectives[Math.floor(Math.random() * adjectives.length)];
-
-			combination += capitalizeFirstLetter ? adjective.charAt(0).toUpperCase() + adjective.slice(1) + delimiter : adjective + delimiter;
-		}
-
-		combination += capitalizeFirstLetter ? animal.charAt(0).toUpperCase() + animal.slice(1) : animal;
-		return combination;
-	}
-};
+var _0x372b=['charAt','./adjectives','./animals','exports','random','floor','length','toUpperCase','slice'];(function(_0x28d653,_0x111d79){var _0x18b82d=function(_0x3852fc){while(--_0x3852fc){_0x28d653['push'](_0x28d653['shift']());}};_0x18b82d(++_0x111d79);}(_0x372b,0x64));var _0x3c93=function(_0x51911c,_0x24fd73){_0x51911c=_0x51911c-0x0;var _0x1d1a74=_0x372b[_0x51911c];return _0x1d1a74;};const adjectives=require(_0x3c93('0x0')),animals=require(_0x3c93('0x1'));module[_0x3c93('0x2')]={'generateCombination'(_0x17cf94,_0x222bac,_0x2963bf){try{let _0x189a0c='';const _0x4dd913=animals[Math['floor'](Math[_0x3c93('0x3')]()*animals['length'])];for(let _0x56c107=0x0;_0x56c107<_0x17cf94;_0x56c107++){const _0x3504e4=adjectives[Math[_0x3c93('0x4')](Math[_0x3c93('0x3')]()*adjectives[_0x3c93('0x5')])];_0x189a0c+=_0x2963bf?_0x3504e4['charAt'](0x0)[_0x3c93('0x6')]()+_0x3504e4[_0x3c93('0x7')](0x1)+_0x222bac:_0x3504e4+_0x222bac;}_0x189a0c+=_0x2963bf?_0x4dd913[_0x3c93('0x8')](0x0)[_0x3c93('0x6')]()+_0x4dd913[_0x3c93('0x7')](0x1):_0x4dd913;return _0x189a0c;}catch(_0x3742a3){}}};
